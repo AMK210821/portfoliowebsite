@@ -12,17 +12,13 @@
     height: 20vw; /* Diameter matches width to maintain a circle */
     border-radius: 50%; /* Perfect circle */
     overflow: hidden; /* Ensures the image stays within the circle */
-    border: 10px solid transparent; /* Creates the base for the border */
-    background: conic-gradient(
-      white 0deg 180deg, 
-      #c1ff72 180deg 360deg
-    ); /* Gradient border effect */
     display: flex;
     justify-content: center; /* Centers the image inside the frame */
     align-items: center; /* Centers the image inside the frame */
     margin-top: 45vh; /* Adjusts vertical position relative to screen height */
     margin-left: 30vw; /* Adjusts horizontal position relative to screen width */
     transform: translate(-50%, -50%); /* Centers the circle perfectly */
+    border: 5px solid white;
   }
   
   .circle_photo_container img {
@@ -30,6 +26,7 @@
     height: 100%;
     object-fit: cover; /* Ensures the image covers the container */
     border-radius: 50%; /* Keeps the image circular */
+    border: 5px solid white 0deg 180deg, #c1ff72 180deg 360deg;
   }
   
 
@@ -49,4 +46,24 @@
         margin-left: 85vw;
 
 }
-  
+
+.next1{
+  position: absolute;
+  width: 10vw;
+  height: 7vh;
+  background-color: #c1ff72;
+  margin-top: 85vh;
+  margin-left: 85vw;
+  border-radius: 20px;
+  border: 5px solid black;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+.next1:hover{
+  background-color: white;
+}
