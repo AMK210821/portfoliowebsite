@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A MANOJ KUMAR</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="2.css">
     <style>
         table {
       border-collapse: collapse;
@@ -13,35 +14,65 @@
       margin-top: 20px;
     }
     th, td {
-      border: 1px solid #ddd;
+      border: 2px solid #c1ff72;
       padding: 8px;
     }
-    th {
-      background-color: #f4f4f4;
+    tr:nth-child(1) {
+      background-color: #c1ff72;
     }
     </style>
 </head>
 <body>
     <div class="label_tag"></div>
-    <div class="circle_photo_container2">
-        <img src="imgs\image.png" alt="" style="width: 100vw;">
-    </div>
-    <div class="name2"> <h1>A MANOJ KUMAR</h1></div>
-    <div class="scrolling_pane">
-        <div class="About_me">About Me</div>
-        <div class="About_para"><p>
-            Hello! My name is A Manoj Kumar, and I am a III year  student pursuing Bachelor of Technology in Computer Science at Vijay Rural Engineering College. I am passionate about software development, artificial intelligence, and web design and I enjoy exploring innovative ways to solve real-world problems through technology.
-            Over the years, I have developed a strong foundation in  programming, data analysis, or UI/UX design , and I am continuously learning new tools and technologies to expand my skill set. Some of the languages and tools I work with include  Python, JavaScript, HTML/CSS, or Figma.
-            When I'm not studying or working on projects, you can find me reading, sketching, or experimenting with new tech gadgets. My goal is to contribute to impactful projects that make a difference in people's lives and grow as a professional.
-            </p></div>
-        <div class="aca_head">Acadamics</div>
-        <div class="table_container">
-        <div id="excelTable"></div></div>
+        <div class="circle_photo_container2">
+             <img src="imgs\image.png" alt="" style="width: 100vw;">
+         </div>
+        <div class="name2"> <h1>A MANOJ KUMAR</h1></div>
+        <div class="icons_container">
+            <button class="resume" onclick="i1()">Resume</button>
+            <img src="https://img.icons8.com/?size=100&id=8808&format=png" alt="Gmail Icon" class="img2" onclick="i2()">
+            <img src="https://img.icons8.com/?size=128&id=E2KVOMc77Geo&format=png" alt="LinkedIn Icon" class="img3" onclick="i3()">
+            <img src="https://img.icons8.com/?size=128&id=ptAjLogGbrSi&format=png" alt="GitHub Icon" class="img4" onclick="i4()">
+            <img src="https://img.icons8.com/?size=128&id=RhYNENh5cxlS&format=png" alt="Instagram Icon" class="img5" onclick="i5()">
+        </div>
+        
+        <div class="scrolling_pane">
+            <div class="About_me">About Me</div>
+            <div class="About_para">
+                <p>Hello! My name is A Manoj Kumar, and I am a III year  student pursuing Bachelor of Technology in Computer Science at Vijay Rural Engineering College. I am passionate about software development, artificial intelligence, and web design and I enjoy exploring innovative ways to solve real-world problems through technology.
+                    Over the years, I have developed a strong foundation in  programming, data analysis, or UI/UX design , and I am continuously learning new tools and technologies to expand my skill set. Some of the languages and tools I work with include  Python, JavaScript, HTML/CSS, or Figma.
+                    When I'm not studying or working on projects, you can find me reading, sketching, or experimenting with new tech gadgets. My goal is to contribute to impactful projects that make a difference in people's lives and grow as a professional.
+                </p>
+            </div>
+            <div class="aca_head">Acadamics</div>
+            <div class="table_container">
+                <div id="excelTable"></div>
+            </div>
+            <div class="prj_label">Projects</div>
+            <div class="prj_lists">
+                <div class="p1" onclick="p1()">
+                    <label for="p1_1" class="p1_1"> 1. Next Gen Smart Cane</label>
+                </div>
+                <div class="p1" onclick="p2()">
+                    <label for="p1_1" class="p1_1">2. Portfolio Website</label>
+                </div>
+            </div>
+            <div class="cit_label">Certifiates</div>
+            <div class="cit_container">
+                 <img id="image" src="imgs\A Manoj Kumar - Participation Certificate (1)_page-0001.jpg" alt="Display Image">
+                <div class="btn-container">
+                     <button onclick="prevImage()">⬅ Back</button>
+                     <button onclick="nextImage()">Next ➡</button>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
     <script src="table.js"></script>
+    <script src="script.js"></script>
 
     
 </body>

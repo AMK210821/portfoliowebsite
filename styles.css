@@ -68,109 +68,11 @@
   background-color: white;
 }
 
-.label_tag{
-  width: 100vw;
-  height: 10vh;
-  background-color: #c1ff72;
-  margin-bottom: 87vh;
-  position: absolute;
-  position: fixed;
-}
 
-.circle_photo_container2 {
-  position: absolute;
-  width: 5vw; /* Diameter is now relative to viewport width */
-  height: 5vw; /* Diameter matches width to maintain a circle */
-  border-radius: 50%; /* Perfect circle */
-  overflow: hidden; /* Ensures the image stays within the circle */
-  display: flex;
-  justify-content: center; /* Centers the image inside the frame */
-  align-items: center; /* Centers the image inside the frame */
-  margin-right: 80vw; /* Adjusts horizontal position relative to screen width */
-  margin-bottom: 70vh;
-  transform: translate(-50%, -50%); /* Centers the circle perfectly */
-  border: 5px solid white;
-  position: fixed;
-}
 
-.circle_photo_container2 img {
-  width: 100%; /* Ensures the image fits the circle */
-  height: 100%;
-  object-fit: cover; /* Ensures the image covers the container */
-  border-radius: 50%; /* Keeps the image circular */
-  border: 5px solid white 0deg 180deg, #c1ff72 180deg 360deg;
-}
 
-.name2 {
-  position: absolute;
-  font-size: 1.5vw;
-  margin-bottom: 87.5vh;
-  margin-left: 69.922vw;
-  position: fixed;
-}
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  background-color: #f4f4f4;
-}
 
-.scrolling_pane {
-  display: block; /* Allow normal flow */
-  width: 100%; /* Full width */
-  background-color: transparent;
-  margin-top: 10vh; /* Space for header, if any */
-  z-index: -1;
-  overflow-y: auto; /* Enable vertical scrolling */
-}
 
-.About_me {
-  position: relative; /* Ensure it participates in flow */
-  width: 10vw;
-  height: 7vh;
-  background-color: #c1ff72;
-  margin-bottom: 20px; /* Use margin for spacing */
-  margin-left: 3vw;
-  border-radius: 10px;
-  text-align: center;
-  align-content: center;
-  font-weight: bold;
-  font-size: 20px;
-  z-index: 1;
-}
 
-.About_para {
-  position: relative; /* Ensure it scrolls */
-  width: 60vw;
-  margin-left: 20vw;
-  margin-top: 15px;
-  z-index: 1;
-}
 
-.aca_head {
-  position: relative; /* Ensure it participates in scroll */
-  width: 10vw;
-  height: 7vh;
-  background-color: #c1ff72;
-  border-radius: 10px;
-  text-align: center;
-  align-content: center;
-  font-weight: bold;
-  font-size: 20px;
-  margin-left: 3vw;
-  margin-top: 20px; /* Adjusted for proper flow */
-  z-index: 1;
-}
-
-.table_container {
-  width: 
-  90vw;
-  position: relative; /* Allow table to flow with content */
-  margin-top: 20px;
-  margin-left: 3vw;
-  z-index: 0; /* Adjust to ensure proper layering */
-  overflow-x: auto; /* Enable horizontal scrolling for table, if needed */
-}

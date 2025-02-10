@@ -1,60 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume with Social Media Icons</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
 
-.scrolling_pane{
-  display: inline-block;
-  position: absolute;
-  width:100vw;
-  height: 90vh;
-  background-color: transparent;
-  margin-top: 10vh;
-  z-index: -1;
-  align-items: center;
-  align-content: center;
-  position: fixed;
+    .row-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px; /* Space between elements */
+      background-color: #fff;
+      padding: 20px;
+      border: 2px solid #c1ff72;
+      border-radius: 10px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
 
-}
+    a.resume-btn {
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #fff;
+      text-decoration: none;
+      background-color: #4CAF50;
+      border-radius: 5px;
+      transition: background-color 0.3s ease-in-out;
+    }
 
-.About_me{
-  position: absolute;
-  width: 10vw;
-  height: 7vh;
-  background-color: #c1ff72;
-  margin-bottom: 60vh;
-  margin-left: 3vw;
-  border-radius: 10px;
-  text-align: center;
-  align-content: center;
-  font-weight: bold;
-  font-size: 20px;
-  z-index: 1;
-}
+    a.resume-btn:hover {
+      background-color: #45a049;
+    }
 
-.About_para{
-  width:60vw;
-  height: 50vh;
-  margin-left: 20vw;
-  margin-top: 15vh;
-  z-index: 1;
-}
+    .social-icons {
+      display: flex;
+      gap: 20px; /* Space between icons */
+    }
 
-.aca_head{
-  position: absolute;
-  width: 10vw;
-  height: 7vh;
-  background-color: #c1ff72;
-  border-radius: 10px;
-  text-align: center;
-  align-content: center;
-  font-weight: bold;
-  font-size: 20px;
-  margin-left: 3vw;
-  margin-top: -20vh ;
-  z-index: 1;
-  /*osition: fixed;*/p
-}
+    .social-icons a {
+      font-size: 30px;
+      color: #333;
+      transition: color 0.3s ease-in-out;
+    }
 
-.table_container{
-  margin-top: -10vh;
-  position: absolute;
-  position: fixed;
-  margin-left: 3vw;
-}
+    .social-icons a:hover {
+      color: #4CAF50;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="row-container">
+    <a href="resume.pdf" class="resume-btn" download>Download Resume</a>
+    <div class="social-icons">
+      <a href="mailto:your-email@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/your-github-profile" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/your-instagram-profile" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+
+</body>
+</html>
