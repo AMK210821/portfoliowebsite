@@ -67,3 +67,40 @@
 .next1:hover{
   background-color: white;
 }
+
+.label_tag{
+  width: 100vw;
+  height: 10vh;
+  background-color: #c1ff72;
+}
+
+.circle_photo_container2 {
+  position: absolute;
+  width: 5vw; /* Diameter is now relative to viewport width */
+  height: 5vw; /* Diameter matches width to maintain a circle */
+  border-radius: 50%; /* Perfect circle */
+  overflow: hidden; /* Ensures the image stays within the circle */
+  display: flex;
+  justify-content: center; /* Centers the image inside the frame */
+  align-items: center; /* Centers the image inside the frame */
+  margin-left: 5vw ; /* Adjusts horizontal position relative to screen width */
+  transform: translate(-50%, -50%); /* Centers the circle perfectly */
+  border: 5px solid white;
+}
+
+.circle_photo_container2 img {
+  width: 100%; /* Ensures the image fits the circle */
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container */
+  border-radius: 50%; /* Keeps the image circular */
+  border: 5px solid white 0deg 180deg, #c1ff72 180deg 360deg;
+}
+
+.name2{
+  position: absolute;
+  font-size: 1.5vw;
+  margin-top: -12.5vh;
+  margin-left: 69.922vw;
+
+
+}
