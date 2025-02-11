@@ -63,7 +63,7 @@ function i3(){
 }
 
 function i4(){
-    window.open("https://mail.google.com/mail/u/0/#inbox?compose=new")
+    window.open("https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsdCvBQgpKCHWqVcCmJfSkGkbHmZNwQQVnSDXhHQRHzfxrzcdRgCSZWBXzZwRSDqNgcrTgHg")
 }
 
 
