@@ -1,112 +1,78 @@
-/* General styles for the main container */
-.green_rectangle {
-  display: flex;
-  flex-direction: column; /* Stack items vertically */
-  justify-content: center; /* Center items vertically */
-  align-items: center; /* Center items horizontally */
-  width: 30vw;
-  height: 98vh;
-  background-color: #c1ff72;
-  margin: 0; /* Ensure no extra spacing */
-  padding: 0;
+.green_rectangle{
+    display: flex;
+    position: absolute;
+    width: 30vw;
+    height: 98vh;
+    background-color: #c1ff72;
 }
 
-/* Circle photo container for the image */
 .circle_photo_container {
-  width: 20vw;
-  height: 20vw;
-  border-radius: 50%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 5px solid white;
-  margin: 20px auto; /* Center the circle container horizontally */
+    position: absolute;
+    width: 20vw; /* Diameter is now relative to viewport width */
+    height: 20vw; /* Diameter matches width to maintain a circle */
+    border-radius: 50%; /* Perfect circle */
+    overflow: hidden; /* Ensures the image stays within the circle */
+    display: flex;
+    justify-content: center; /* Centers the image inside the frame */
+    align-items: center; /* Centers the image inside the frame */
+    margin-top: 45vh; /* Adjusts vertical position relative to screen height */
+    margin-left: 30vw; /* Adjusts horizontal position relative to screen width */
+    transform: translate(-50%, -50%); /* Centers the circle perfectly */
+    border: 5px solid white;
+  }
+  
+  .circle_photo_container img {
+    width: 100%; /* Ensures the image fits the circle */
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+    border-radius: 50%; /* Keeps the image circular */
+    border: 5px solid white 0deg 180deg, #c1ff72 180deg 360deg;
+  }
+  
+
+.name{
+    position: absolute;
+    font-size: 3vw;
+    margin-top: 20vh;
+    margin-left: 44vw;
+
+
 }
 
-.circle_photo_container img {
-  width: 100%; /* Fill the container */
-  height: 100%;
-  object-fit: cover; /* Maintain aspect ratio while filling */
+.tag_line{
+        position: absolute;
+        font-size: 1.5vw;
+        margin-top: 35vh;
+        margin-left: 85vw;
+
 }
 
-/* Name styling */
-.name {
-  font-size: 3vw; /* Adjust size based on screen width */
-  text-align: center; /* Center text horizontally */
-  margin: 20px 0; /* Add some spacing */
-}
-
-/* Tagline styling */
-.tag_line {
-  font-size: 1.5vw; /* Adjust size based on screen width */
-  text-align: center; /* Align to the center */
-  margin: 10px 0; /* Spacing for better readability */
-}
-
-/* Button styling */
-.next1 {
+.next1{
+  position: absolute;
   width: 10vw;
   height: 7vh;
   background-color: #c1ff72;
+  margin-top: 85vh;
+  margin-left: 85vw;
   border-radius: 20px;
   border: 5px solid black;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  align-content: center;
   text-align: center;
-  font-size: 1rem; /* Use rem for better scaling */
+  font-size: 20px;
   font-weight: bold;
-  margin: 20px auto; /* Center the button */
+
 }
 
-.next1:hover {
+.next1:hover{
   background-color: white;
 }
 
-/* Responsive styles for tablets */
-@media (max-width: 768px) {
-  .green_rectangle {
-      width: 100vw; /* Full width */
-      height: auto; /* Adjust height automatically */
-  }
 
-  .circle_photo_container {
-      width: 40vw;
-      height: 40vw;
-  }
 
-  .name {
-      font-size: 5vw;
-  }
 
-  .tag_line {
-      font-size: 3vw;
-  }
 
-  .next1 {
-      width: 50%; /* Adjust button size */
-      font-size: 1.2rem; /* Increase button text size */
-  }
-}
 
-/* Responsive styles for mobile devices */
-@media (max-width: 480px) {
-  .circle_photo_container {
-      width: 50vw; /* Smaller circle for smaller screens */
-      height: 50vw;
-  }
 
-  .name {
-      font-size: 6vw;
-  }
 
-  .tag_line {
-      font-size: 4vw;
-  }
 
-  .next1 {
-      width: 80%; /* Full-width button */
-      font-size: 1rem; /* Adjust text size */
-  }
-}
