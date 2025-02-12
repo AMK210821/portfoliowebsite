@@ -20,8 +20,9 @@ body {
     display: flex;
     position: absolute;
     width: 30vw;
-    height: 98vh;
+    height: 100vh;
     background-color: #c1ff72;
+    margin-right: 80vw;
 }
 
 .circle_photo_container {
@@ -34,7 +35,7 @@ body {
     justify-content: center; /* Centers the image inside the frame */
     align-items: center; /* Centers the image inside the frame */
     margin-top: 45vh; /* Adjusts vertical position relative to screen height */
-    margin-left: 30vw; /* Adjusts horizontal position relative to screen width */
+    margin-right: 30vw; /* Adjusts horizontal position relative to screen width */
     transform: translate(-50%, -50%); /* Centers the circle perfectly */
     border: 5px solid white;
   }
@@ -51,7 +52,7 @@ body {
 .name{
     position: absolute;
     font-size: 3vw;
-    margin-top: 20vh;
+    margin-bottom: 20vh;
     margin-left: 44vw;
 
 
@@ -60,7 +61,7 @@ body {
 .tag_line{
         position: absolute;
         font-size: 1.5vw;
-        margin-top: 35vh;
+        margin-bottom: 40vh;
         margin-left: 85vw;
 
 }
