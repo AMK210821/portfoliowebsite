@@ -1,3 +1,8 @@
+html{
+  height: -webkit-fill-available;
+}
+
+
 .label_tag{
     width: 100vw;
     height: 15vh;
@@ -47,13 +52,14 @@
     height: 100vh;
     margin: 0;
     background-color: #f4f4f4;
+    height: -webkit-fill-available;
   }
   
   .scrolling_pane {
     display: block; /* Allow normal flow */
     width: 100%; /* Full width */
     background-color: transparent;
-    margin-top: 10vh; /* Space for header, if any */
+    margin-top: 20vh; /* Space for header, if any */
     z-index: -1;
     overflow-y: auto; /* Enable vertical scrolling */
   }
@@ -63,7 +69,7 @@
     width: 10vw;
     height: 7vh;
     background-color: #c1ff72;
-    margin-top: 140vh; /* Use margin for spacing */
+    margin-top: 150vh; /* Use margin for spacing */
     margin-left: 3vw;
     border-radius: 10px;
     text-align: center;
