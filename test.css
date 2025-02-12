@@ -18,6 +18,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   background-color: #f0f0f0;
+  padding: 20px; /* Added padding for spacing */
 }
 
 /* Green rectangle */
@@ -25,17 +26,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%; /* Dynamic width */
-  height: 30%; /* Dynamic height */
+  width: 90%;
+  max-width: 600px; /* Prevents it from becoming too wide */
+  height: 30vh;
+  max-height: 300px; /* Prevents it from growing too tall */
   background-color: #c1ff72;
   border-radius: 10px;
   position: relative;
+  overflow: hidden;
 }
 
 /* Circle Photo */
 .circle_photo_container {
-  width: 15vw; /* Responsive size */
-  height: 15vw; /* Circle */
+  width: 15vw; 
+  height: 15vw;
+  max-width: 150px; /* Prevents oversized circles */
+  max-height: 150px;
   border-radius: 50%;
   overflow: hidden;
   display: flex;
@@ -55,6 +61,7 @@ body {
   font-size: 2rem;
   text-align: center;
   margin-top: 20px;
+  word-wrap: break-word; /* Prevents text overflow */
 }
 
 /* Tagline */
@@ -68,7 +75,9 @@ body {
 /* Next button */
 .next1 {
   width: 20vw;
+  max-width: 200px; /* Caps the button size */
   height: 6vh;
+  max-height: 50px; /* Caps height */
   background-color: #c1ff72;
   border-radius: 20px;
   border: 2px solid black;
@@ -87,19 +96,44 @@ body {
   background-color: white;
 }
 
-/* Media Queries for smaller screens */
-@media (max-width: 768px) {
+/* Media Queries for Tablets */
+@media (max-width: 1024px) {
   .green_rectangle {
-    height: 40%;
+    height: 35vh;
   }
 
   .circle_photo_container {
-    width: 30vw;
-    height: 30vw;
+    width: 20vw;
+    height: 20vw;
   }
 
   .name {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+  }
+
+  .tag_line {
+    font-size: 0.95rem;
+  }
+
+  .next1 {
+    width: 30vw;
+    height: 7vh;
+  }
+}
+
+/* Media Queries for smaller screens (768px) */
+@media (max-width: 768px) {
+  .green_rectangle {
+    height: 40vh;
+  }
+
+  .circle_photo_container {
+    width: 25vw;
+    height: 25vw;
+  }
+
+  .name {
+    font-size: 1.6rem;
   }
 
   .tag_line {
@@ -107,23 +141,24 @@ body {
   }
 
   .next1 {
-    width: 50%;
-    font-size: 0.8rem;
+    width: 40vw;
+    font-size: 0.9rem;
   }
 }
 
+/* Media Queries for small phones (480px) */
 @media (max-width: 480px) {
   .green_rectangle {
-    height: 50%;
+    height: 50vh;
   }
 
   .circle_photo_container {
-    width: 40vw;
-    height: 40vw;
+    width: 35vw;
+    height: 35vw;
   }
 
   .name {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .tag_line {
@@ -131,7 +166,7 @@ body {
   }
 
   .next1 {
-    width: 60%;
-    font-size: 0.7rem;
+    width: 50vw;
+    font-size: 0.8rem;
   }
 }
